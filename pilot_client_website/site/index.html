@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coral Sky Aviation | Flight School South Africa | Rand Airport</title>
+  <meta name="description" content="South Africa's premier SACAA-approved aviation training academy at Rand Airport. Complete flight training from PPL to CPL, cabin crew certification, and aircraft maintenance.">
+  <link rel="preconnect" href="https://server.arcgisonline.com" crossorigin>
+  <link rel="dns-prefetch" href="https://server.arcgisonline.com">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="icon" href="images/logo/PHOTO-2026-06-26-21-30-39.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/leaflet.css"/>
+</head>
+<body>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/27633166313" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" id="whatsapp-float">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.588 1.971 14.113.945 11.993.945c-5.447 0-9.873 4.38-9.877 9.808-.002 1.814.497 3.582 1.447 5.158L2.534 20.73l4.113-1.576zM18.66 15.65c-.328-.164-1.944-.957-2.244-1.067-.301-.11-.52-.164-.738.164-.219.328-.848 1.067-1.039 1.286-.192.219-.384.246-.712.082-.328-.164-1.385-.51-2.638-1.627-.975-.87-1.633-1.946-1.825-2.274-.192-.329-.02-.507.144-.67.147-.146.328-.383.493-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.738-1.777-1.011-2.434-.266-.64-.537-.552-.738-.562-.19-.01-.41-.01-.629-.01s-.575.082-.876.41c-.301.328-1.15 1.12-1.15 2.732 0 1.612 1.177 3.167 1.341 3.386.164.219 2.316 3.535 5.609 4.953.784.338 1.396.539 1.874.69.787.25 1.503.214 2.07.129.631-.095 1.944-.793 2.218-1.559.274-.766.274-1.422.192-1.559-.082-.137-.301-.219-.629-.383z"/></svg>
+  </a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo/only plane part of logo.png?v=2" alt="Coral Sky Aviation Logo" class="nav-brand-logo">
+        <div class="nav-brand-text">Coral Sky<small>Aviation</small></div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="programmes.html">Programmes</a>
+        <a href="about.html">Why Coral Sky</a>
+        <a href="contact.html">Contact</a>
+        <div class="menu-social-mobile">
+          <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/27633166313" class="social-link" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.588 1.971 14.113.945 11.993.945c-5.447 0-9.873 4.38-9.877 9.808-.002 1.814.497 3.582 1.447 5.158L2.534 20.73l4.113-1.576zM18.66 15.65c-.328-.164-1.944-.957-2.244-1.067-.301-.11-.52-.164-.738.164-.219.328-.848 1.067-1.039 1.286-.192.219-.384.246-.712.082-.328-.164-1.385-.51-2.638-1.627-.975-.87-1.633-1.946-1.825-2.274-.192-.329-.02-.507.144-.67.147-.146.328-.383.493-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.738-1.777-1.011-2.434-.266-.64-.537-.552-.738-.562-.19-.01-.41-.01-.629-.01s-.575.082-.876.41c-.301.328-1.15 1.12-1.15 2.732 0 1.612 1.177 3.167 1.341 3.386.164.219 2.316 3.535 5.609 4.953.784.338 1.396.539 1.874.69.787.25 1.503.214 2.07.129.631-.095 1.944-.793 2.218-1.559.274-.766.274-1.422.192-1.559-.082-.137-.301-.219-.629-.383z"/></svg></a>
+        </div>
+      </nav>
+
+      <div class="header-social-desktop">
+        <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+        <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://wa.me/27633166313" class="social-link" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.588 1.971 14.113.945 11.993.945c-5.447 0-9.873 4.38-9.877 9.808-.002 1.814.497 3.582 1.447 5.158L2.534 20.73l4.113-1.576zM18.66 15.65c-.328-.164-1.944-.957-2.244-1.067-.301-.11-.52-.164-.738.164-.219.328-.848 1.067-1.039 1.286-.192.219-.384.246-.712.082-.328-.164-1.385-.51-2.638-1.627-.975-.87-1.633-1.946-1.825-2.274-.192-.329-.02-.507.144-.67.147-.146.328-.383.493-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.738-1.777-1.011-2.434-.266-.64-.537-.552-.738-.562-.19-.01-.41-.01-.629-.01s-.575.082-.876.41c-.301.328-1.15 1.12-1.15 2.732 0 1.612 1.177 3.167 1.341 3.386.164.219 2.316 3.535 5.609 4.953.784.338 1.396.539 1.874.69.787.25 1.503.214 2.07.129.631-.095 1.944-.793 2.218-1.559.274-.766.274-1.422.192-1.559-.082-.137-.301-.219-.629-.383z"/></svg></a>
+      </div>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn--navy">Enquire Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <video autoplay muted loop playsinline>
+        <source src="images/hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="container">
+      <div class="hero-body">
+        <div class="hero-logo-wrap">
+          <img src="images/logo/only plane part of logo.png?v=2" alt="Coral Sky Aviation Logo" class="hero-logo">
+        </div>
+        <div class="hero-badge">SACAA Approved Aviation Training Organisation</div>
+        <h1>Coral Sky <span>Aviation</span></h1>
+        <p class="hero-desc">Training commercial pilots, cabin crew, and aircraft maintenance professionals. Delivering structured career pathways from our facilities at Rand Airport, Germiston, South Africa.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn--sky">Enquire Now</a>
+          <a href="https://wa.me/27633166313" class="btn btn--white-outline" target="_blank">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-row">
+        <div class="stat-item reveal">
+          <div class="stat-num" data-target="400" data-suffix="+">0</div>
+          <div class="stat-label">Pilots Trained</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num" data-target="20" data-suffix="+">0</div>
+          <div class="stat-label">Years of Excellence</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num" data-target="14">0</div>
+          <div class="stat-label">Months to CPL</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-num" data-target="7" data-prefix="1:">0</div>
+          <div class="stat-label">Aircraft-to-Student Ratio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Campus Map -->
+  <section class="section section--dark campus-map-section">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 700px; margin: 0 auto 3rem;">
+        <span class="section-eyebrow">Our Location</span>
+        <h2 class="section-heading">Based at Rand Airport, South Africa</h2>
+        <p class="section-lead" style="margin: 0 auto;">Our training facilities are located at Rand Airport (FAGM), Germiston — one of the busiest general aviation airports in Africa.</p>
+      </div>
+      <div id="campus-map"></div>
+    </div>
+  </section>
+
+  <!-- Programmes Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-eyebrow">Our Programmes</span>
+        <h2 class="section-heading">Aviation Training Pathways</h2>
+        <p class="section-lead">Structured courses for commercial flight certifications, cadet pathways, cabin crew service, and aircraft maintenance.</p>
+      </div>
+
+      <div class="programme-grid-bento">
+        <!-- Flight Training -->
+        <div class="bento-card bento-card--ft reveal">
+          <div class="bento-card-bg" style="background-image: url('images/cessna-172.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+              <span class="badge badge--active" style="border-radius: 4px;">Live</span>
+              <span class="bento-card-eyebrow" style="margin-bottom: 0;">PPL / CPL / IR / Multi-Engine</span>
+            </div>
+            <h3 class="bento-card-title">Flight Training</h3>
+            <p class="bento-card-desc">Comprehensive instruction from initial PPL through CPL licensing. Led by active airline captains with structured flight hours and ground school.</p>
+            <a href="programmes.html#flight-training" class="bento-card-link">View Details &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Cadet Pilot Programme -->
+        <div class="bento-card bento-card--cp reveal">
+          <div class="bento-card-bg" style="background-image: url('images/multi-engine.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+              <span class="badge badge--progress" style="border-radius: 4px;">Enrolling Soon</span>
+              <span class="bento-card-eyebrow" style="margin-bottom: 0;">Full Pathway</span>
+            </div>
+            <h3 class="bento-card-title">Cadet Programme</h3>
+            <p class="bento-card-desc">Structured career pathway from zero experience to airline readiness.</p>
+            <a href="programmes.html#cadet-programme" class="bento-card-link">Register Interest &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Cabin Crew Training -->
+        <div class="bento-card bento-card--cc reveal">
+          <div class="bento-card-bg" style="background-image: url('images/cabin-crew-group.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+              <span class="badge badge--pending" style="border-radius: 4px;">Coming Soon</span>
+              <span class="bento-card-eyebrow" style="margin-bottom: 0;">Professional Service</span>
+            </div>
+            <h3 class="bento-card-title">Cabin Crew</h3>
+            <p class="bento-card-desc">Safety and service excellence at 35,000 feet.</p>
+            <a href="programmes.html#cabin-crew" class="bento-card-link">Register Interest &rarr;</a>
+          </div>
+        </div>
+
+        <!-- AMO Maintenance -->
+        <div class="bento-card bento-card--am reveal">
+          <div class="bento-card-bg" style="background-image: url('images/piper.png');"></div>
+          <div class="bento-card-overlay"></div>
+          <div class="bento-card-content">
+            <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+              <span class="badge badge--pending" style="border-radius: 4px;">Coming Soon</span>
+              <span class="bento-card-eyebrow" style="margin-bottom: 0;">SACAA Certification</span>
+            </div>
+            <h3 class="bento-card-title">AMO Aircraft Maintenance</h3>
+            <p class="bento-card-desc">Mechanical and systems training for aircraft service licensing. SACAA-aligned certification courses for maintenance professionals.</p>
+            <a href="programmes.html#aircraft-maintenance" class="bento-card-link">Register Interest &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full-Bleed Image Split — Cockpit -->
+  <div class="split-row">
+    <div class="split-image cockpit-interactive">
+      <img src="images/pilots-in-cockpit.png" alt="Commercial Pilots in Aircraft Cockpit">
+
+      <div class="cockpit-hotspot" style="left:50%;top:10%;">
+        <div class="hotspot-dot"></div>
+        <div class="hotspot-tip">Overhead Panel</div>
+      </div>
+
+      <div class="cockpit-hotspot" style="left:22%;top:42%;">
+        <div class="hotspot-dot"></div>
+        <div class="hotspot-tip">Captain's Seat</div>
+      </div>
+
+      <div class="cockpit-hotspot" style="left:78%;top:42%;">
+        <div class="hotspot-dot"></div>
+        <div class="hotspot-tip">First Officer's Seat</div>
+      </div>
+
+      <div class="cockpit-hotspot" style="left:50%;top:68%;">
+        <div class="hotspot-dot"></div>
+        <div class="hotspot-tip">Main Instrument Panel</div>
+      </div>
+
+      <div class="cockpit-hotspot" style="left:50%;top:88%;">
+        <div class="hotspot-dot"></div>
+        <div class="hotspot-tip">Center Console</div>
+      </div>
+    </div>
+    <div class="split-content">
+      <span class="section-eyebrow">State-of-the-Art Training</span>
+      <h2 class="section-heading" style="margin-bottom: 1.5rem;">Learn from Airline Captains</h2>
+      <p class="section-lead" style="margin-bottom: 1.5rem;">Every instructor at Coral Sky Aviation holds active commercial aviation routes. You receive real-world operational insights from day one of your training, not just textbook theory.</p>
+      <p class="section-lead">Our simulator facilities allow instrument rating practice and multi-engine preparation using advanced cockpit environments before you ever leave the ground.</p>
+    </div>
+  </div>
+
+  <!-- USPs Section -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-eyebrow">Why Choose Us</span>
+        <h2 class="section-heading">The Coral Sky Distinction</h2>
+        <p class="section-lead">Training framework focused on aircraft safety, instructional quality, and direct airline pathways.</p>
+      </div>
+
+      <div class="usp-grid" style="margin-top: 4rem;">
+        <div class="usp-item reveal">
+          <h3>Zero to CPL in 14 Months</h3>
+          <p>Optimized flight hours and structured lessons designed to reach your Commercial Pilot License efficiently.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>Airline Captain Instructors</h3>
+          <p>Learn from instructors with active airline routes offering direct real-world operational insights.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>Advanced Simulator</h3>
+          <p>Multi-engine instrument rating practice in advanced cockpit simulator environments from day one.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>1:7 Aircraft-to-Student</h3>
+          <p>Excellent ratio ensures aircraft availability and minimizes scheduling delays in your logbook.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>1:10 Instructor Ratio</h3>
+          <p>Small cohorts for focused individual debrief review and cockpit guidance from your assigned instructor.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>Everything Under One Roof</h3>
+          <p>Pilots, crew, and maintenance all under a single integrated academy campus at Rand Airport.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>International Cohorts</h3>
+          <p>Students from across Africa, India, Pakistan, UAE, and the UK building a global professional peer network.</p>
+        </div>
+        <div class="usp-item reveal">
+          <h3>Custom Quotations</h3>
+          <p>Admissions billed in your local currency at current exchange rates. No static ZAR pricing barriers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future of Aviation Training Section -->
+  <section class="section section--dark" id="vision-section">
+    <div class="container">
+      <div class="vision-layout">
+        <div class="vision-text reveal">
+          <span class="section-eyebrow">Our Vision</span>
+          <h2 class="section-heading" style="margin-bottom: 2rem;">The Future of Aviation Training</h2>
+          <div class="vision-cards-stack">
+            <div class="vision-card">
+              <h4>Facility Expansion</h4>
+              <p>Transitioning into a purpose-built hangar campus with dedicated lecture halls, debrief suites, and student lounges.</p>
+            </div>
+            <div class="vision-card">
+              <h4>On-Campus Accommodation</h4>
+              <p>Secure residential blocks near Rand Airport for international and out-of-town cadets.</p>
+            </div>
+            <div class="vision-card">
+              <h4>Airline Corridors</h4>
+              <p>Direct recruitment pathways with regional airline operators to support CPL graduate job placement.</p>
+            </div>
+          </div>
+        </div>
+        <div class="vision-image-wrapper reveal">
+          <div class="vision-image-card">
+            <img src="images/vision-plane.png" alt="Coral Sky Training Aircraft in flight">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center; max-width:700px; margin:0 auto 3.5rem;">
+        <span class="section-eyebrow">Graduate Testimonials</span>
+        <h2 class="section-heading">Hear From Our Pilots</h2>
+        <p class="section-lead" style="margin:0 auto;">Video testimonials from our graduates are being filmed ahead of our September 2026 launch.</p>
+      </div>
+
+      <div class="testimonial-carousel reveal">
+        <div class="testimonial-track" id="testimonial-track">
+
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-video-placeholder">
+              <div class="tvp-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="tvp-badge">Coming Sept 2026</div>
+            </div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">CPL Graduate</p>
+              <p class="testimonial-meta">Commercial Pilot · South Africa</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-video-placeholder tvp--2">
+              <div class="tvp-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="tvp-badge">Coming Sept 2026</div>
+            </div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">CPL Graduate</p>
+              <p class="testimonial-meta">Commercial Pilot · Zimbabwe</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-video-placeholder tvp--3">
+              <div class="tvp-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="tvp-badge">Coming Sept 2026</div>
+            </div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Cadet Graduate</p>
+              <p class="testimonial-meta">First Officer · India</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-video-placeholder tvp--4">
+              <div class="tvp-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="tvp-badge">Coming Sept 2026</div>
+            </div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">CPL Graduate</p>
+              <p class="testimonial-meta">Commercial Pilot · Nigeria</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-video-placeholder tvp--5">
+              <div class="tvp-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="tvp-badge">Coming Sept 2026</div>
+            </div>
+            <div class="testimonial-info">
+              <p class="testimonial-name">Cadet Graduate</p>
+              <p class="testimonial-meta">First Officer · United Kingdom</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="testimonial-controls">
+          <button class="t-btn t-btn--prev" id="t-prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+          </button>
+          <div class="testimonial-dots" id="testimonial-dots"></div>
+          <button class="t-btn t-btn--next" id="t-next" aria-label="Next">
+            <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Launch Your Career in the Skies</h2>
+      <p>Enquire today for a customized quotation calculated in your local currency. Our admissions office is ready to assist.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn--sky">Get Custom Quote</a>
+        <a href="assets/coral-sky-brochure-placeholder.pdf" class="btn btn--white-outline" download>Download Brochure</a>
+        <a href="https://wa.me/27633166313" class="btn btn--white-outline" target="_blank">WhatsApp Chat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section reveal">
+    <div class="container newsletter-grid">
+      <div class="newsletter-text">
+        <h3>Stay Connected</h3>
+        <p>Subscribe to receive operational updates, regional recruitment news, and course schedules directly in your inbox.</p>
+      </div>
+      <div class="newsletter-form-wrap">
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email Address">
+          <button type="submit" class="btn btn--sky">Subscribe</button>
+        </form>
+        <div id="newsletter-status" class="newsletter-status"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="nav-brand">
+            <img src="images/logo/only plane part of logo.png?v=2" alt="Coral Sky Aviation Logo" class="nav-brand-logo" style="filter: brightness(0) invert(1);">
+            <div class="nav-brand-text" style="color: var(--white);">Coral Sky<small style="color: var(--sky);">Aviation</small></div>
+          </a>
+          <p class="footer-brand-desc">SACAA-approved training organisation delivering flight training, cabin crew, and maintenance courses from Rand Airport, South Africa.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="https://wa.me/27633166313" class="social-link" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.968C16.588 1.971 14.113.945 11.993.945c-5.447 0-9.873 4.38-9.877 9.808-.002 1.814.497 3.582 1.447 5.158L2.534 20.73l4.113-1.576zM18.66 15.65c-.328-.164-1.944-.957-2.244-1.067-.301-.11-.52-.164-.738.164-.219.328-.848 1.067-1.039 1.286-.192.219-.384.246-.712.082-.328-.164-1.385-.51-2.638-1.627-.975-.87-1.633-1.946-1.825-2.274-.192-.329-.02-.507.144-.67.147-.146.328-.383.493-.574.164-.192.219-.328.328-.547.11-.219.055-.41-.027-.574-.082-.164-.738-1.777-1.011-2.434-.266-.64-.537-.552-.738-.562-.19-.01-.41-.01-.629-.01s-.575.082-.876.41c-.301.328-1.15 1.12-1.15 2.732 0 1.612 1.177 3.167 1.341 3.386.164.219 2.316 3.535 5.609 4.953.784.338 1.396.539 1.874.69.787.25 1.503.214 2.07.129.631-.095 1.944-.793 2.218-1.559.274-.766.274-1.422.192-1.559-.082-.137-.301-.219-.629-.383z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="about.html">Why Coral Sky</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Programmes</h4>
+          <ul>
+            <li><a href="programmes.html#flight-training">Flight Training</a></li>
+            <li><a href="programmes.html#cadet-programme">Cadet Programme</a></li>
+            <li><a href="programmes.html#cabin-crew">Cabin Crew</a></li>
+            <li><a href="programmes.html#aircraft-maintenance">Maintenance (AMO)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <span>Rand Airport, Germiston, South Africa</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span>coralskyaviation@gmail.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <span>+27 63 316 6313</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Coral Sky Aviation (Pty) Ltd. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      const track = document.getElementById('testimonial-track');
+      const dotsWrap = document.getElementById('testimonial-dots');
+      const prevBtn = document.getElementById('t-prev');
+      const nextBtn = document.getElementById('t-next');
+      if (!track) return;
+
+      const cards = track.querySelectorAll('.testimonial-card');
+      const total = cards.length;
+      let current = 0;
+      let timer;
+
+      // Build dots
+      cards.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 't-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        d.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(d);
+      });
+
+      function goTo(index) {
+        cards[current].classList.remove('active');
+        dotsWrap.children[current].classList.remove('active');
+        current = (index + total) % total;
+        cards[current].classList.add('active');
+        dotsWrap.children[current].classList.add('active');
+        resetTimer();
+      }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => goTo(current + 1), 4000);
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+
+      // Init
+      cards[0].classList.add('active');
+      resetTimer();
+    })();
+  </script>
+  <script src="js/vendor/leaflet.js"></script>
+  <script>
+    (function () {
+      const mapEl = document.getElementById('campus-map');
+      if (!mapEl) return;
+      let initiated = false;
+
+      function initMap() {
+        if (initiated) return;
+        initiated = true;
+
+        const map = L.map('campus-map', {
+          zoomControl: true,
+          scrollWheelZoom: false,
+          attributionControl: true
+        }).setView([-28, 25], 8);
+
+        const tileUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}';
+
+        const tileLayer = L.tileLayer(tileUrl, {
+          attribution: '&copy; Esri &mdash; Source: Esri, USGS, NOAA',
+          maxZoom: 19
+        }).addTo(map);
+
+        function prefetchTiles(lat, lng, zoom, radius) {
+          const n = Math.pow(2, zoom);
+          const latRad = lat * Math.PI / 180;
+          const cx = Math.floor((lng + 180) / 360 * n);
+          const cy = Math.floor((1 - Math.log(Math.tan(latRad) + 1 / Math.cos(latRad)) / Math.PI) / 2 * n);
+          for (let dx = -radius; dx <= radius; dx++) {
+            for (let dy = -radius; dy <= radius; dy++) {
+              new Image().src = tileUrl
+                .replace('{z}', zoom)
+                .replace('{y}', cy + dy)
+                .replace('{x}', cx + dx);
+            }
+          }
+        }
+
+        prefetchTiles(-26.2428, 28.1519, 17, 1);
+
+        const icon = L.divIcon({
+          className: '',
+          html: '<div class="map-pin-marker"><div class="map-pin-pulse"></div></div>',
+          iconSize: [20, 20],
+          iconAnchor: [10, 10]
+        });
+
+        let animationStarted = false;
+        function startAnimation() {
+          if (animationStarted) return;
+          animationStarted = true;
+          map.flyTo([-26.2428, 28.1519], 17, { duration: 3.5, easeLinearity: 0.25 });
+          setTimeout(() => {
+            L.marker([-26.2428, 28.1519], { icon })
+              .addTo(map)
+              .bindPopup('<strong>Coral Sky Aviation</strong><br>Rand Airport (FAGM), Germiston')
+              .openPopup();
+          }, 3600);
+        }
+
+        tileLayer.on('load', startAnimation);
+        setTimeout(startAnimation, 2500);
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            observer.disconnect();
+            initMap();
+          }
+        });
+      }, { threshold: 0, rootMargin: '800px 0px 800px 0px' });
+
+      observer.observe(mapEl);
+    })();
+  </script>
+</body>
+</html>

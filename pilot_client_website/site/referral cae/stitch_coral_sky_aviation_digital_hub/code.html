@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coral Sky Aviation | Premium Flight Training</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#eae7ec",
+                        "on-primary-fixed-variant": "#3b4472",
+                        "inverse-on-surface": "#f3f0f4",
+                        "outline-variant": "#c6c5d0",
+                        "on-secondary-fixed": "#00174a",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-container-low": "#f5f2f7",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1b1b1f",
+                        "action-blue": "#2969F2",
+                        "surface-container": "#f0edf1",
+                        "secondary-fixed-dim": "#b3c5ff",
+                        "tertiary": "#000000",
+                        "surface-container-highest": "#e4e1e6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#fbf8fd",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#535b8b",
+                        "surface-variant": "#e4e1e6",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#303034",
+                        "on-secondary-container": "#fefcff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#00468c",
+                        "tertiary-fixed": "#d6e3ff",
+                        "on-primary-container": "#7881b3",
+                        "inverse-primary": "#bbc3fa",
+                        "on-error-container": "#93000a",
+                        "secondary": "#0051d3",
+                        "primary-container": "#0e1744",
+                        "surface-dim": "#dcd9de",
+                        "surface-subtle": "#F8F8F8",
+                        "error": "#ba1a1a",
+                        "outline": "#767680",
+                        "surface": "#fbf8fd",
+                        "on-secondary-fixed-variant": "#003ea6",
+                        "secondary-container": "#2c6bf4",
+                        "on-primary-fixed": "#0e1744",
+                        "on-tertiary-container": "#4284e0",
+                        "background": "#fbf8fd",
+                        "primary-fixed": "#dee1ff",
+                        "tertiary-container": "#001b3d",
+                        "aviation-blue": "#005EB8",
+                        "on-tertiary-fixed": "#001b3d",
+                        "primary": "#000000",
+                        "on-surface": "#1b1b1f",
+                        "tertiary-fixed-dim": "#a9c7ff",
+                        "on-surface-variant": "#46464f",
+                        "midnight": "#06103D",
+                        "primary-fixed-dim": "#bbc3fa"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "80px",
+                        "stack-md": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layer { background-color: #F8F8F8; }
+        .border-subtle { border: 1px solid #E0E0E0; }
+        .hero-gradient { background: linear-gradient(to right, rgba(6, 16, 61, 0.95) 30%, rgba(6, 16, 61, 0.2) 100%); }
+        .card-shadow-hover:hover { box-shadow: 0 20px 30px -5px rgba(41, 105, 242, 0.1); }
+    </style>
+</head>
+<body class="bg-surface-container-lowest font-body-md text-on-background antialiased overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<header class="bg-midnight sticky top-0 z-50 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-desktop h-20 max-w-container-max mx-auto">
+<div class="flex items-center gap-12">
+<a class="flex items-center gap-3" href="#">
+<img alt="Coral Sky Aviation Logo" class="h-10 w-auto invert" src="https://lh3.googleusercontent.com/aida/AP1WRLt04tgIvPxQz-Ek36YR3m7u0FvyLKSlrhV1aHt32xTr4wG1uCMsIaKyOdfKeCIkia2kGSKoHQ7XI4IdW-9XhYD3j3S7IkdeBWk1Asj2QGbppse9jyFEjzXnUzCBMoW4JCsTGBPg153wE9loyJoSNQJAWX_47NsyUS7GUg7McuehMyb55kAmBtW3YoskYfcV62bIl1V9xaSH5U-JVtYUHzABKcx5SMnMqBNdpPXMMLvwLtujGR4lXdiF1gkg"/>
+<span class="text-headline-md font-headline-md font-bold text-surface-container-lowest uppercase tracking-tight">Coral Sky</span>
+</a>
+<nav class="hidden lg:flex gap-8">
+<a class="text-label-md font-label-md text-surface-container-lowest border-b-2 border-action-blue pb-1" href="#">Flight Training</a>
+<a class="text-label-md font-label-md text-surface-variant hover:text-surface-container-lowest transition-colors" href="#">Cadet Programme</a>
+<a class="text-label-md font-label-md text-surface-variant hover:text-surface-container-lowest transition-colors" href="#">Cabin Crew</a>
+<a class="text-label-md font-label-md text-surface-variant hover:text-surface-container-lowest transition-colors" href="#">Maintenance</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-4 border-r border-surface-variant/20 pr-6">
+<span class="material-symbols-outlined text-surface-variant cursor-pointer hover:text-action-blue transition-all">search</span>
+<span class="material-symbols-outlined text-surface-variant cursor-pointer hover:text-action-blue transition-all">person</span>
+</div>
+<button class="bg-action-blue text-on-primary px-6 py-2.5 text-label-md font-label-md font-bold rounded-lg hover:bg-aviation-blue transition-all flex items-center gap-2">
+                    Enquire Now →
+                </button>
+<button class="lg:hidden text-surface-container-lowest">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-[85vh] w-full overflow-hidden flex items-center">
+<div class="absolute inset-0 z-0">
+<img alt="Pilot in cockpit looking at dashboard" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtnHwFovmbGqRYv1XEULqZSKrPM9sUyBZl6qznLg9iDSVZf1IqvujXMgC0UTnBn01LQDRWDBwvs62zhnAXrM6jO-7KqZcjJW60N4rHnV430q46jwZR93WU1XUrXkyNkkSSuvVRl8eNXyOsyMTXTx0FZ6AyEVKPfnSKufTWpplTOwZpTl4tyG1LTDZRIlQaKPbRkuqNzwt3k5fMA3kIa41CDYSSlB4M1ha7njYvy8P6fq75Oa8baZZsZVTc"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-7 lg:col-span-6 space-y-8">
+<div class="space-y-4">
+<h1 class="text-display-lg font-display-lg text-surface-container-lowest leading-tight">
+                        Your Airline Career Starts Here.
+                    </h1>
+<p class="text-body-lg font-body-lg text-surface-variant max-w-lg">
+                        Premium Flight Training at Rand Airport. We build the foundations for global aviation leaders with uncompromising standards and state-of-the-art facilities.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-action-blue text-on-primary px-10 py-4 text-label-md font-label-md font-bold rounded-lg hover:scale-105 transition-transform duration-300">
+                        Enquire Now →
+                    </button>
+<button class="bg-transparent border-2 border-surface-container-lowest text-surface-container-lowest px-10 py-4 text-label-md font-label-md font-bold rounded-lg hover:bg-surface-container-lowest hover:text-midnight transition-all duration-300 flex items-center gap-3">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                        WhatsApp Us
+                    </button>
+</div>
+</div>
+</div>
+<!-- Floating Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center text-surface-variant opacity-50">
+<span class="text-label-md font-label-md mb-2">SCROLL</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+<!-- Stats Banner -->
+<section class="tonal-layer py-12">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg text-midnight" id="stat-1">400+</div>
+<div class="text-label-md font-label-md text-outline uppercase tracking-wider">Graduates</div>
+</div>
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg text-midnight" id="stat-2">20 Years</div>
+<div class="text-label-md font-label-md text-outline uppercase tracking-wider">Excellence</div>
+</div>
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg text-midnight" id="stat-3">14 Mo</div>
+<div class="text-label-md font-label-md text-outline uppercase tracking-wider">Zero to CPL</div>
+</div>
+<div class="space-y-1">
+<div class="text-headline-lg font-headline-lg text-midnight">98%</div>
+<div class="text-label-md font-label-md text-outline uppercase tracking-wider">Employment Rate</div>
+</div>
+</div>
+</section>
+<!-- Training Pathways (Bento Grid) -->
+<section class="py-stack-lg max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="space-y-4">
+<h2 class="text-headline-lg font-headline-lg text-midnight">Training Pathways</h2>
+<div class="h-1.5 w-24 bg-action-blue"></div>
+</div>
+<p class="text-body-md text-outline max-w-md">
+                Industry-leading programs designed to take you from a curious beginner to a professional aviator within the airline industry's most demanding standards.
+            </p>
+</div>
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Main Path: Flight Training -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-xl border-subtle h-[450px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A professional male and female pilot standing in front of a white private jet on a bright sunny day at a private airport hangar, blue skies in the background, sharp commercial photography style with clean whites and deep blues." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSguc4WfnuLJxk68jSL7XyTy5CeOzGz0XDwqXmBWD1R4B-06aNHlY0HEkrh79BJos4H_dubHDZb135gKbpU2xuF0Num_l0kQDsCBCCyzIF4p3ROB_C9pa6JIZ4XskMTOpGebM8OwkQ8iDsimc83HWlqb5E243laDTosvUa1UJfL0b_nf07NkAjFlSBMNPa5WqsU3974KK1jufZMWva2k1evyfecVy4wdoToNf_ask2Mn0-jrMQl_skdod50S75JmvWwV4qePeoPaKa')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-midnight/90 via-midnight/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<div class="flex items-center gap-3 mb-3">
+<span class="material-symbols-outlined text-action-blue bg-surface-container-lowest p-2 rounded-full">flight_takeoff</span>
+<span class="text-label-md font-label-md text-surface-container-lowest uppercase tracking-widest">Aviation Excellence</span>
+</div>
+<h3 class="text-headline-lg font-headline-lg text-surface-container-lowest mb-4">Professional Flight Training</h3>
+<p class="text-surface-variant max-w-md mb-6">Master the skies with our Private and Commercial Pilot License programs, including Night and Multi-Engine Ratings.</p>
+<a class="text-surface-container-lowest font-bold flex items-center gap-2 hover:gap-4 transition-all group-hover:text-action-blue" href="#">View Details →</a>
+</div>
+</div>
+<!-- Cadet Programme -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl border-subtle h-[450px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A group of young aviation students in smart white uniforms with epaulettes standing in a modern glass hallway, smiling and holding flight manuals, bright high-key lighting, corporate and professional atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAey8D2dcPjvKb5KXYrmzyygUUX2VCVQSgmxBVH5VxuityU7GDbFoKugVYrFvtQMkd0j-d-BfvVzw8MEk94yWSlU4JTp8yWflRqT9Rj_c_3bPJ1z2jiWdeJBlwpren1ZTeHN47KLVI8SwUZ93QXDwsQjTsfA2fDKWq67HOfXJD-zPEjYycYa3gx9lWWwJBAhBp7k5BFt8GGh6YRMqBh-l9fBZ2NP07GuUqxvGfQ3rl3gwQ_Z8iUXT5vbsUngxiY07ERVKSjdVjvX9lS')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-midnight/90 via-midnight/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-headline-md font-headline-md text-surface-container-lowest mb-2">Cadet Programme</h3>
+<p class="text-surface-variant mb-4">Direct pathway to leading global airlines.</p>
+<a class="text-surface-container-lowest font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">Explore →</a>
+</div>
+</div>
+<!-- Cabin Crew -->
+<div class="col-span-12 md:col-span-4 group relative overflow-hidden rounded-xl border-subtle h-[350px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a flight attendant in a sharp navy blue uniform demonstrating safety procedures inside a luxury aircraft cabin with warm ambient lighting, premium textures of leather and wood in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARQip0ZGzmzAtK1tdTMoN1UU2Jx1goVaRV515hOisvHfQ5YkO9na7TCaM9DbFxf-PZjRTGYVavrq2vHbUkZeEWh89tv68EIPYh_tXiO--TczJ8THevGnkPQCHAVxsrwsESn--QDmLdNTlbR9V8OfLT3bb8L8VZ2RfDtho8HXkGLvxgoURH1A7KLuYUTsXJil5PyVecqcF366BEeDxDH2kZFYQauloB3EH-UbuILAia35slXjSWZfEhtZy5L0KyQOnuO9gfwUnJKP9O')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-midnight/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-headline-md font-headline-md text-surface-container-lowest mb-2">Cabin Crew</h3>
+<p class="text-surface-variant mb-4">Safety and service at 35,000 feet.</p>
+<a class="text-surface-container-lowest font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">Details →</a>
+</div>
+</div>
+<!-- Maintenance -->
+<div class="col-span-12 md:col-span-8 group relative overflow-hidden rounded-xl border-subtle h-[350px]">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A skilled aircraft engineer in a dark work suit inspecting a large jet engine turbine in a clean, brightly lit industrial hangar, professional tools nearby, technical and high-precision atmosphere with shallow depth of field." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfxiFKFgTKx83TgGN_oepRgWc2qYuyNbhx-V5oPdcZIj-KdIEhmmd4I1vVTtqAwD2xONs3b26C-jh2UdRtPFyOsAanxTZPmB-kqVisgIJMPQU8Pa4Bfzn7N_TAeDK8jIdylKkzn6LGQP87TsNq5D9yGl0qxJWVkltDJ6k-oz-ZNHDmv4qXs3SK8Kb8ZMwALN50onLryLzpNn2jEzd92D1rD_Rho8lXTmsexqxzfEyXA9klTNIL3-vLt9SYY-o6-5Kz_N1p0dc65vOE')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-midnight/90 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-headline-md font-headline-md text-surface-container-lowest mb-2">AMO Maintenance</h3>
+<p class="text-surface-variant mb-4">Technical precision and engineering excellence in aircraft maintenance.</p>
+<a class="text-surface-container-lowest font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">Learn More →</a>
+</div>
+</div>
+</div>
+</section>
+<!-- The Airline Standard -->
+<section class="py-stack-lg bg-midnight text-on-primary">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-12 gap-gutter items-center">
+<div class="col-span-12 lg:col-span-5 space-y-10">
+<div class="space-y-4">
+<h2 class="text-display-lg font-display-lg leading-tight">The Airline Standard</h2>
+<p class="text-body-lg text-surface-variant">We don't just teach you how to fly; we train you to operate as a professional airline pilot from day one.</p>
+</div>
+<ul class="space-y-8">
+<li class="flex items-start gap-6 group">
+<div class="bg-action-blue/10 p-3 rounded-lg group-hover:bg-action-blue transition-colors duration-300">
+<span class="material-symbols-outlined text-action-blue group-hover:text-on-primary">flight</span>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md mb-1">1:7 Aircraft Ratio</h4>
+<p class="text-surface-variant">Maximum availability and flying hours to ensure on-time course completion.</p>
+</div>
+</li>
+<li class="flex items-start gap-6 group">
+<div class="bg-action-blue/10 p-3 rounded-lg group-hover:bg-action-blue transition-colors duration-300">
+<span class="material-symbols-outlined text-action-blue group-hover:text-on-primary">groups</span>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md mb-1">Airline Captain Instructors</h4>
+<p class="text-surface-variant">Learn directly from seasoned veterans with decades of commercial flight experience.</p>
+</div>
+</li>
+<li class="flex items-start gap-6 group">
+<div class="bg-action-blue/10 p-3 rounded-lg group-hover:bg-action-blue transition-colors duration-300">
+<span class="material-symbols-outlined text-action-blue group-hover:text-on-primary">memory</span>
+</div>
+<div>
+<h4 class="text-headline-md font-headline-md mb-1">State-of-the-Art Simulators</h4>
+<p class="text-surface-variant">Industry-leading FNPT II simulators for immersive procedure and emergency training.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="col-span-12 lg:col-span-7 relative">
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img alt="Full-flight simulator cockpit interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsE2MokIx8ufg5SwNrnWXSU8iUTH9PY69f_lTFe3HiBj4ijrM63-JU_cVVqD9Y8FusccOaYUwLPlhCTYpu1e8dfDQs_SpPnAKVT7Mre8989BPt-L0Gv57ro4lpzSEZf_eKO2VqKCUg7JihPbLRL13LbqlHs8YFt4nzVGZTrdiG1zgDESAiJ-BSKUk5ZkKSVIMVU6XC8ijh0GEBFy3VMyDKo_AEPp1HM_ibcsrqZSTjIXl_VtZrfE0RYLB6N"/>
+</div>
+<div class="absolute -bottom-10 -left-10 hidden xl:block bg-action-blue p-8 rounded-lg shadow-xl max-w-xs">
+<span class="material-symbols-outlined text-on-primary text-5xl mb-4">military_tech</span>
+<p class="text-body-md font-bold text-on-primary">Certified by SACAA and International Aviation Authorities</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Community -->
+<section class="py-stack-lg overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="tonal-layer rounded-3xl p-8 md:p-16 relative overflow-hidden flex flex-col md:flex-row gap-12 items-center">
+<div class="relative z-10 space-y-6 flex-1">
+<span class="bg-action-blue/10 text-action-blue px-4 py-1.5 rounded-full text-label-md font-label-md inline-block">INTERNATIONAL STUDENTS</span>
+<h2 class="text-display-lg font-display-lg text-midnight">Global Community</h2>
+<p class="text-body-lg text-outline">Joining us from abroad? We provide comprehensive support for international cadets, including visa assistance, accommodation, and curated training paths for global career mobility.</p>
+<button class="bg-midnight text-on-primary px-10 py-4 text-label-md font-label-md font-bold rounded-lg hover:bg-aviation-blue transition-all">Request International Quote →</button>
+</div>
+<div class="flex-1 w-full max-w-lg">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img class="rounded-xl aspect-[3/4] object-cover shadow-lg border-subtle" data-alt="A portrait of a male pilot candidate from a middle eastern background, looking confident in his pilot uniform against a bright office background, part of a global diversity collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALkvy57TLUtN1ORTHpo2bkPgyoLpfUbHV4rfQMdalXt98H10H_qmhsfYvSewrJLTmEB2EvADYA-T-K5ykwvJ8rgNt36klNRZx8AeodUNi79_fmYE5e_I16o7j3nBiX3V7bFcc36AUW3J_gRsMS57bEn2B_j6eLDve4_MAar5dU0WaevLSK8BOxjrfaTJsHs6avpLT4orJ9db-BpxwNxKBLBUEnnGeNS0aVVxPMcl2H4KcCJtbM2gHh2V3exh_ZqZWKab3g14je_Uoo"/>
+<img class="rounded-xl aspect-square object-cover shadow-lg border-subtle" data-alt="Aerial view of a modern training airfield with several small white propeller aircraft lined up on the tarmac under a clear blue sky, clean and organized aviation environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCS4N8r6ndilbkPVTeeA4ZZEhomR8L0V8zjE7GfavUALibM2jDr4NJDfPGvjOlB4JJaGlFS7AhhnMY2SSFSOIL6rGj4kyt5onjnZKP_jfpMc_UUTrM0FdMClELs341ny1oVsXvDAzF9iV4zZMVlz6os_bxJZB1uIcVrgr4ZOoatNx5F3wUInSJMQjatAj0iL58iob6ggUpwsGsTY9IfoPo7NBlWgH53e-1EAnTzifX-8Yr7YqSy9DYzBSymnQPKhizXumCfo9V1sie"/>
+</div>
+<div class="space-y-4">
+<img class="rounded-xl aspect-square object-cover shadow-lg border-subtle" data-alt="A professional young asian female pilot in uniform smiling at the camera while sitting in the cockpit of a trainer aircraft, vibrant lighting, professional commercial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm1hLBK8xD35m4XHJ7iBe5bsBjbVQv_nkFn8TpZL2bGalsIoW5nw_JqZ2uV1yGjpwXGRPxN6ADWpaHE6xa7QdznGO9gyTzHPkUiSdtIGRUUY20lWLBo7QG6WB7190QFIdaPi41LMAiPjdcn51fsgcoQbG2YvoOtETOd1ppcY9wPpV54HM1_ys9J2E6rIOYH1GcMc015FNS9P-cfTvYEe3stozlAhkXinVeCT7f6CLNFCYkYg1oUi5UiyB0TY5YSDnbQH8W1fZBAZFV"/>
+<img class="rounded-xl aspect-[3/4] object-cover shadow-lg border-subtle" data-alt="Modern aircraft hangar interior at sunset with a small private plane partially visible, warm golden hour lighting reflecting off the polished concrete floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXKKTwB2Kssdz6bf4tsdw08gr2Jl39J-zc96xv7JiqZ1TUx7lOMy-ZY3jGyWzflAkWMF608A4Xqju_cJ1ocUXfHhZsLgyz6NkgDtBCrLrfQ0-5yUrev9b95lg9OABR4rrd4cM3eJ7Q08-iQRZrM2S-bue05pWnkn2D1sdHREjHPgJ-IRAPL-ghKkIkaNYb_SciTmBU7zaVdGIxpLl0p2hUW0DWDUcqQU73qGxY-KkjrgHgBsHFcd5kX9oBNWupeGH_IxCEJVZvGZxO"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-midnight text-on-primary">
+<div class="grid grid-cols-12 gap-gutter px-margin-desktop py-stack-md w-full max-w-container-max mx-auto">
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<div class="flex items-center gap-3">
+<img alt="Coral Sky Aviation Logo" class="h-8 w-auto invert" src="https://lh3.googleusercontent.com/aida/AP1WRLt04tgIvPxQz-Ek36YR3m7u0FvyLKSlrhV1aHt32xTr4wG1uCMsIaKyOdfKeCIkia2kGSKoHQ7XI4IdW-9XhYD3j3S7IkdeBWk1Asj2QGbppse9jyFEjzXnUzCBMoW4JCsTGBPg153wE9loyJoSNQJAWX_47NsyUS7GUg7McuehMyb55kAmBtW3YoskYfcV62bIl1V9xaSH5U-JVtYUHzABKcx5SMnMqBNdpPXMMLvwLtujGR4lXdiF1gkg"/>
+<span class="text-headline-md font-headline-md font-bold text-surface-container-lowest uppercase tracking-tight">Coral Sky</span>
+</div>
+<p class="text-surface-variant text-body-md max-w-xs">
+                    South Africa's premier flight academy, training the next generation of global aviation leaders since 2004.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center hover:bg-action-blue transition-all" href="#">
+<span class="material-symbols-outlined text-surface-container-lowest text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center hover:bg-action-blue transition-all" href="#">
+<span class="material-symbols-outlined text-surface-container-lowest text-lg">play_circle</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-lowest/10 flex items-center justify-center hover:bg-action-blue transition-all" href="#">
+<span class="material-symbols-outlined text-surface-container-lowest text-lg">share</span>
+</a>
+</div>
+</div>
+<div class="col-span-6 lg:col-span-2 space-y-6">
+<h5 class="text-label-md font-label-md text-surface-container-lowest uppercase tracking-widest">Training</h5>
+<ul class="space-y-4 text-surface-variant">
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Flight Training</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Cadet Programme</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Cabin Crew</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Maintenance</a></li>
+</ul>
+</div>
+<div class="col-span-6 lg:col-span-2 space-y-6">
+<h5 class="text-label-md font-label-md text-surface-container-lowest uppercase tracking-widest">Company</h5>
+<ul class="space-y-4 text-surface-variant">
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">About Us</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Investors</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Careers</a></li>
+<li><a class="hover:text-action-blue hover:underline transition-all" href="#">Sustainability</a></li>
+</ul>
+</div>
+<div class="col-span-12 lg:col-span-4 space-y-6">
+<h5 class="text-label-md font-label-md text-surface-container-lowest uppercase tracking-widest">Subscribe to Updates</h5>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest/10 border-0 rounded-lg flex-1 text-on-primary placeholder:text-surface-variant focus:ring-2 focus:ring-action-blue" placeholder="Email address" type="email"/>
+<button class="bg-action-blue px-6 py-2 rounded-lg font-bold hover:bg-aviation-blue transition-all">Join</button>
+</div>
+<p class="text-label-md text-surface-variant italic">Join 2,500+ aspiring pilots in our global network.</p>
+</div>
+</div>
+<div class="border-t border-surface-container-lowest/10 py-10 px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-label-md font-label-md text-surface-variant">
+                    © 2024 Coral Sky Aviation Academy. All rights reserved. Precision Engineering for Global Safety.
+                </p>
+<div class="flex gap-8 text-label-md font-label-md text-surface-variant">
+<a class="hover:text-action-blue" href="#">Privacy Policy</a>
+<a class="hover:text-action-blue" href="#">Terms of Service</a>
+<a class="hover:text-action-blue" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Header Scroll Effect
+            const header = document.querySelector('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('bg-midnight/95', 'backdrop-blur-md', 'shadow-xl');
+                    header.classList.remove('h-20');
+                    header.classList.add('h-16');
+                } else {
+                    header.classList.remove('bg-midnight/95', 'backdrop-blur-md', 'shadow-xl');
+                    header.classList.add('h-20');
+                    header.classList.remove('h-16');
+                }
+            });
+
+            // Simple Counter Animation (Intersection Observer)
+            const stats = [
+                { id: 'stat-1', target: 400, suffix: '+' },
+                { id: 'stat-2', target: 20, suffix: ' Years' },
+                { id: 'stat-3', target: 14, suffix: ' Mo' }
+            ];
+
+            const observerOptions = { threshold: 0.5 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const statObj = stats.find(s => s.id === entry.target.id);
+                        if (statObj) {
+                            animateValue(entry.target, 0, statObj.target, 2000, statObj.suffix);
+                            observer.unobserve(entry.target);
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            stats.forEach(s => {
+                const el = document.getElementById(s.id);
+                if (el) observer.observe(el);
+            });
+
+            function animateValue(obj, start, end, duration, suffix = "") {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    obj.innerHTML = Math.floor(progress * (end - start) + start) + suffix;
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+        });
+    </script>
+</body></html>
