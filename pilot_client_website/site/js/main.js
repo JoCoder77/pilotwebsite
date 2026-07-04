@@ -171,56 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 7. Interactive Map Tooltips
-  const mapContainer = document.querySelector(".map-container");
-  const mapNodes = document.querySelectorAll(".map-node");
-  const tooltip = document.getElementById("map-tooltip");
-
-  if (mapContainer && tooltip && mapNodes.length > 0) {
-    const tooltipCountry = tooltip.querySelector(".tooltip-country");
-    const tooltipDetails = tooltip.querySelector(".tooltip-details");
-
-    mapNodes.forEach(node => {
-      const showTooltip = (e) => {
-        const country = node.getAttribute("data-country");
-        const details = node.getAttribute("data-details");
-
-        tooltipCountry.innerText = country;
-        tooltipDetails.innerText = details;
-        tooltip.classList.add("visible");
-
-        // Calculate relative position of node inside container
-        const rect = node.getBoundingClientRect();
-        const containerRect = mapContainer.getBoundingClientRect();
-
-        // Position tooltip above the pin centered horizontally
-        let x = rect.left - containerRect.left + (rect.width / 2);
-        let y = rect.top - containerRect.top - 10;
-
-        tooltip.style.left = `${x}px`;
-        tooltip.style.top = `${y}px`;
-        tooltip.style.transform = "translate(-50%, -100%)";
-      };
-
-      const hideTooltip = () => {
-        tooltip.classList.remove("visible");
-      };
-
-      node.addEventListener("mouseenter", showTooltip);
-      node.addEventListener("mousemove", showTooltip);
-      node.addEventListener("mouseleave", hideTooltip);
-      node.addEventListener("click", (e) => {
-        e.stopPropagation();
-        showTooltip(e);
-      });
-    });
-
-    document.addEventListener("click", () => {
-      tooltip.classList.remove("visible");
-    });
-  }
-
-  // 8. Newsletter Form Submission
+  // 7. Newsletter Form Submission
   const newsletterForm = document.getElementById("newsletter-form");
   const newsletterStatus = document.getElementById("newsletter-status");
 
